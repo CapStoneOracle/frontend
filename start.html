@@ -16,17 +16,27 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body style="font-family: 'Noto Sans KR';
+             background-image: url('./image/main-background.png');
+             background-repeat: no-repeat;
+             background-position: 60% 30%;
+             background-size: 100vh;
              background-color: white;
              text-align: center;">
 
-<main>
-<div>로그인</div>
-<input class="form-control form-control-lg" type="text" placeholder="아이디를 입력해주세요" aria-label=".form-control-lg example">
-<input class="form-control form-control-lg" type="text" placeholder="암호를 입력해주세요" aria-label=".form-control-lg example">
-</main>
+<!-- footer -->
 
-<footer>
+<footer class="fixed-bottom mb-5">
+    <div class="mb-4 font32b">앱소개</div>
+    <div class="mb-5 font32b">@@@@@@@@@</div>
+    <div><button type="button" class="btn btn-primary font20r mb-4">로그인</button></div>
+    <div><button type="button" class="btn btn-primary font20r mb-4">
+        <i class="fa-brands fas fa-google"></i> 구글로 로그인</button></div>
 
+        <div class="font16r mt-4 mb-4" style="display: flex; justify-content: space-around;">
+            <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="#">회원 가입</a>
+        </div>
 </footer>
 
     

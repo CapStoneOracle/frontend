@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="font-family: 'Noto Sans KR';
+             background-color: white;
+             text-align: center;">
+
+<!-- 네비바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <div class="container-fluid">                                       
+
+        <a class="navbar-brand" href="#">
+            <img src="./image/back.png" width="46px"> </a>
+
+         <!-- 홈버튼추가
+        <button class="navbar-toggler px-1" type="button" style="border: none;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./image/home.png" width="38px"></img> </button > -->
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+
+    </div>
+  </nav>
+
+  <main>
+    
+    <div class="font28b mt-5 text-center mb-5" style="padding-right:40vw;">회원가입 완료!
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+        <div id="lottie-animation" style="width: 300px; height: 300px;"></div>
+    </div>
+    
+    <script>
+        const animationContainer = document.getElementById("lottie-animation");
+        const animationData = {
+            container: animationContainer,
+            renderer: "svg",
+            loop: false,
+            autoplay: true,
+            path: "https://assets7.lottiefiles.com/packages/lf20_uu0x8lqv.json"
+        };
+    
+        const anim = lottie.loadAnimation(animationData);
+        anim.addEventListener('complete', function () {
+            anim.loop = false; // 루프 모드를 비활성화합니다.
+            anim.goToAndStop(anim.getDuration(true) - 1, true); // 애니메이션의 마지막 프레임 직전으로 이동하고 멈춥니다.
+        });
+    </script>
+    
+    
+    
+</main>
+
+
+
+<footer class="fixed-bottom mb-5">
+    <div><button type="button" class="btn btn-primary font20r mb-4">로그인</button></div>
+
+    <div class="font16r mt-4 mb-4" style="display: flex; justify-content: space-around;">
+        <a href="#" style="visibility: hidden;">아이디 찾기</a>
+        <a href="#" style="visibility: hidden;">비밀번호 찾기</a>
+        <a href="#" style="visibility: hidden; padding-right: 1vw;">회원 가입</a>
+    </div>
+</footer>
+
+
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

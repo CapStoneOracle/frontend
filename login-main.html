@@ -19,30 +19,48 @@
              background-color: white;
              text-align: center;">
 
-<!-- 홈버튼 네비바 -->
+<!-- 네비바 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
     <div class="container-fluid">                                       
 
         <a class="navbar-brand" href="#">
             <img src="./image/back.png" width="46px"> </a>
 
+         <!-- 홈버튼추가
         <button class="navbar-toggler px-1" type="button" style="border: none;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="./image/home.png" width="38px"></img> </button >
+        <img src="./image/home.png" width="38px"></img> </button > -->
 
          <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
 
     </div>
   </nav>
 
-<main>
-<div>로그인</div>
-<input class="form-control form-control-lg" type="text" placeholder="아이디를 입력해주세요" aria-label=".form-control-lg example">
-<input class="form-control form-control-lg" type="text" placeholder="암호를 입력해주세요" aria-label=".form-control-lg example">
+  <main>
+    <div class="font28b mt-5 text-center" style="padding-right:58vw;">로그인</div>
+
+    <div class="d-flex justify-content-center">
+        <input class="form-control form-control-lg login-input font20r" style="margin-top: 12vh;"
+         type="text" placeholder="아이디를 입력해주세요" aria-label=".아이디 입력"> 
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <input class="form-control form-control-lg login-input font20r mt-5" 
+        type="password" placeholder="암호를 입력해주세요" aria-label=".암호 입력"> 
+    </div>
+
 </main>
 
-<footer>
 
+
+<footer class="fixed-bottom mb-5">
+    <div><button type="button" class="btn btn-primary font20r mb-4">로그인</button></div>
+
+        <div class="font16r mt-4 mb-4" style="display: flex; justify-content: space-around;">
+            <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="#" style="padding-right: 1vw;">회원 가입</a>
+        </div>
 </footer>
 
     
