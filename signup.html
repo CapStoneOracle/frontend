@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="font-family: 'Noto Sans KR';
+             background-color: white;
+             text-align: center;">
+
+<!-- 네비바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top> 
+    <div class="container-fluid">                                       
+
+        <a class="navbar-brand" href="#">
+            <img src="./image/back.png" width="46px"> </a>
+
+         <!-- 홈버튼추가
+        <button class="navbar-toggler px-1" type="button" style="border: none;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./image/home.png" width="38px"></img> </button > -->
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+
+    </div>
+  </nav>
+
+  <main>
+    <style>
+        /* 스크롤바를 적용할 컨테이너의 스타일 */
+        .scrollable-content {
+            overflow-y: scroll;
+            max-height: calc(100vh - 200px);
+            scrollbar-width: none; /* Firefox 스크롤바 제거 */
+            -ms-overflow-style: none; /* IE 및 Edge  스크롤바 제거 */
+        }
+    
+        /* Webkit 브라우저(Chrome, Safari) 스크롤바 제거 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <div class="d-flex justify-content-center">
+        <div class="scrollable-content mt-2">
+
+            <div class="font28b" style="text-align: left; width: 306px;">회원가입
+            </div>
+    
+            <div class="d-flex justify-content-center ">
+                <input class="form-control form-control-lg sign-up-input font14r mt-3"
+                    type="text" placeholder="아이디를 입력해주세요" aria-label="아이디"> 
+            </div>        
+            
+            <div class="d-flex justify-content-center">
+                <div class="font12b sign-up-problem mt-1">이미 가입한 아이디입니다.</div>
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="이메일을 입력해주세요" aria-label="이메일"> 
+            </div>
+
+            <div class="d-flex justify-content-center mb-2">
+                <div class="font12b sign-up-problem mt-1">이미 가입한 이메일입니다.</div>
+            </div>
+
+        <div style="padding:0px 12px 5px 12px ; background-color: #F0F0F0;">
+
+            <div class="d-flex justify-content-center">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="인증번호를 입력해주세요" aria-label="인증번호"> 
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <span class="font12b sign-up-problem pt-1" style="color: black; width: 226px;">인증번호가 도착하지 않았다면?
+                </span>
+
+                <span><a class="font12r" style="color:blue; 
+                border-bottom: 2px solid blue; position: relative;">인증번호 재발송</a>
+                </span>  
+            </div>
+
+        </div>
+
+            <div class="d-flex justify-content-center my-2">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="암호를 입력해주세요 (최소 8자, 최대 12자)" aria-label="암호"> 
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="암호를 재입력해주세요" aria-label="재입력 암호"> 
+            </div>
+
+            <div class="d-flex justify-content-center mb-2">
+                <div class="font12b sign-up-problem mt-1">암호가 일치하지 않습니다.
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-2">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="별명을 입력해주세요" aria-label="별명"> 
+            </div>
+
+            <div class="d-flex justify-content-center mb-2">
+                <div class="font12b sign-up-problem mt-1">이미 존재하는 별명입니다..</div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</main>
+
+
+
+<footer class="fixed-bottom mb-5">
+    <div><button type="button" class="btn btn-primary font20r">가입 하기</button></div>
+</footer>
+
+
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

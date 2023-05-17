@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup-end</title>
+    <title>find-id</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,7 @@
              text-align: center;">
 
 <!-- 네비바 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top> 
     <div class="container-fluid">                                       
 
         <a class="navbar-brand" href="#">
@@ -37,40 +37,52 @@
   </nav>
 
   <main>
-    
-    <div class="font28b mt-5 text-center mb-5" style="padding-right:40vw;">회원가입 완료!
+
+    <div class="font28b mt-5 text-center mb-5" style="padding-right:40vw;">아이디 찾기
     </div>
 
     <div class="d-flex justify-content-center">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
-        <div id="lottie-animation" style="width: 300px; height: 300px;"></div>
-    </div>
+        <div class="scrollable-content mt-2">
     
-    <script>
-        const animationContainer = document.getElementById("lottie-animation");
-        const animationData = {
-            container: animationContainer,
-            renderer: "svg",
-            loop: false,
-            autoplay: true,
-            path: "https://assets7.lottiefiles.com/packages/lf20_uu0x8lqv.json"
-        };
-    
-        const anim = lottie.loadAnimation(animationData);
-        anim.addEventListener('complete', function () {
-            anim.loop = false; // 루프 모드를 비활성화합니다.
-            anim.goToAndStop(anim.getDuration(true) - 1, true); // 애니메이션의 마지막 프레임 직전으로 이동하고 멈춥니다.
-        });
-    </script>
-    
-    
-    
-</main>
+            <div class="d-flex justify-content-center">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="이메일을 입력해주세요" aria-label="이메일"> 
+            </div>
 
+            <div class="d-flex justify-content-center mt-3">
+                <span class="font12b sign-up-problem " style="width: 240px; padding-top: 0.4rem;">가입하지 않은 이메일입니다.
+                </span>
+
+                <span><a class="font12r" style="color:blue; 
+                border-bottom: 2px solid blue; position: relative;">인증번호 발송</a>
+                </span>  
+            </div>
+
+            <div class="d-flex justify-content-center mt-5">
+                <input class="form-control form-control-lg sign-up-input font14r"
+                type="text" placeholder="인증번호를 입력해주세요" aria-label="인증번호"> 
+            </div>
+
+            <div class="d-flex justify-content-center mb-2">
+                <div class="font12b sign-up-problem">인증번호가 일치하지 않습니다.</div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-3">
+                <span class="font12b sign-up-problem " style="color: black; width: 226px; padding-top: 0.4rem;">인증번호가 도착하지 않았다면?
+                </span>
+
+                <span><a class="font12r" style="color:blue; 
+                border-bottom: 2px solid blue; position: relative;">인증번호 재발송</a>
+                </span>  
+            </div>
+
+        </div>
+
+    </div>
 
 
 <footer class="fixed-bottom mb-5">
-    <div><button type="button" class="btn btn-primary font20r mb-4">로그인</button></div>
+    <div><button type="button" class="btn btn-primary font20r mb-4">아이디 찾기</button></div>
 
     <div class="font16r mt-4 mb-4" style="display: flex; justify-content: space-around;">
         <a href="#" style="visibility: hidden;">아이디 찾기</a>
